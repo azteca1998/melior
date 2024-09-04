@@ -14,7 +14,7 @@ ods-dialects = []
 [dependencies]
 dashmap = "6.0.1"
 melior-macro = { version = "0.11.5", path = "../macro" }
-mlir-sys = { path = "../../mlir-sys" }
+mlir-sys = { git = "https://github.com/azteca1998/mlir-sys.git", branch = "update-llvm19" }
 once_cell = "1"
 
 [dev-dependencies]

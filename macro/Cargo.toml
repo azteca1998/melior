@@ -20,12 +20,12 @@ proc-macro2 = "1"
 quote = "1"
 regex = "1.10.6"
 syn = { version = "2", features = ["full"] }
-tblgen = { path = "../../tblgen-rs-alt", features = [
+tblgen = { git = "https://github.com/azteca1998/tblgen-rs-alt.git", branch = "update-llvm19", features = [
     "llvm19-0",
 ], default-features = false, package = "tblgen-alt" }
 unindent = "0.2.3"
 
 [dev-dependencies]
 melior = { path = "../melior", features = ["ods-dialects"] }
-mlir-sys = { path = "../../mlir-sys" }
+mlir-sys = { git = "https://github.com/azteca1998/mlir-sys.git", branch = "update-llvm19" }
 pretty_assertions = "1.4.0"
